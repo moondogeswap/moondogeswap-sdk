@@ -3,8 +3,8 @@ import { ChainId, Token, Pair, TokenAmount, WETH, Price } from '../src'
 describe('Pair', () => {
   const USDC = new Token(ChainId.MAINNET, '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 18, 'USDC', 'USD Coin')
   const DAI = new Token(ChainId.MAINNET, '0x6B175474E89094C44Da98b954EedeAC495271d0F', 18, 'DAI', 'DAI Stablecoin')
-  const WBNB = new Token(ChainId.BSCTESTNET, '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd', 18, 'WBNB', 'WBNB Wrapped BNB')
-  const MODO = new Token(ChainId.BSCTESTNET, '0x5b54bfaa35A3469fB169E2e97C207F8E86A8e405', 18, 'MODO', 'MODO Token')
+  const WBNB = new Token(ChainId.BSCTESTNET, '0x2C9f90d20894CFe919768a4535FbAC220dBb4630', 18, 'WBNB', 'WBNB Wrapped BNB')
+  const MODO = new Token(ChainId.BSCTESTNET, '0x1001328FA77e83825dED544A690344B542830864', 18, 'MODO', 'MODO Token')
   describe('constructor', () => {
     it('cannot be used for tokens on different chains', () => {
       expect(() => new Pair(new TokenAmount(USDC, '100'), new TokenAmount(WETH[ChainId.BSCTESTNET], '100'))).toThrow(
@@ -17,9 +17,8 @@ describe('Pair', () => {
     // it('returns the correct address', () => {
     //   expect(Pair.getAddress(USDC, DAI)).toEqual('0xcA069B7AC1B9759D5f0547aa550c9c51d71D36d1')
     // })
-
     it('returns the correct address WBNB+MODO', () => {
-      expect(Pair.getAddress(MODO, WBNB)).toEqual('0xF0c48a95Cd7bD37D08cC9BB3f19ca77c14f757d5')
+      expect(Pair.getAddress(MODO, WBNB)).toEqual('0xF612ccF014B7A1e53Bd57f00715C2b1af3239D6F')
     })
   })
 
