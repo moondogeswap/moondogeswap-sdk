@@ -1,5 +1,10 @@
 # MoonDogeSwap SDK
 
+## Change logs
+
+### 2021-05-29
+ 1. entities/tokens.ts WBNB 0x2C9f90d20894CFe919768a4535FbAC220dBb4630
+
 ## Running tests
 
 To run the tests, follow these steps. You must have at least node v10 and [yarn](https://yarnpkg.com/) installed.
