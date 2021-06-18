@@ -23,6 +23,9 @@ export const FACTORY_ADDRESS = '0x6e06bbdb10374ded08bc53aad98f6f3fe317c0e4'
 // 
 export const INIT_CODE_HASH = '0x01fb416dc77de6e78a82d77de7901b1871da985b9efecd99fb7b569d10927285'
 
+export const FACTORY_ADDRESS_PROD = '0x5A67D6d1e1c36dcA265ca9b9BDA0e3Eb5Af9B634'
+// 
+export const INIT_CODE_HASH_PROD = '0x01fb416dc77de6e78a82d77de7901b1871da985b9efecd99fb7b569d10927285'
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
 // exports for internal consumption
